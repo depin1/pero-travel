@@ -1,0 +1,233 @@
+.baground_img {
+    background-image: url(../images/bagroundheader.png);
+    width: 100%;
+    min-height: 789px;
+    background-size: cover;
+    object-fit: cover;
+    padding: 26px 0 0 0;
+    position: relative;
+}
+
+.header_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+}
+
+.header__menu_item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.header__menu_item .menu__item_href {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFC700;
+}
+
+.check,
+.label,
+.label2 {
+    display: none;
+}
+
+.label {
+    width: 40px;
+    height: 40px;
+}
+
+.label2 {
+    width: 40px;
+    height: 40px;
+}
+
+.header_end {
+    margin-top: 120px;
+}
+
+.header_end_width {
+    max-width: 592px;
+}
+
+.header__end_title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: #FFFFFF;
+}
+
+.header__end_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.end__flex_title {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 117px;
+    -webkit-text-stroke: 1px #ffff;
+    color: transparent;
+    font-family: 'Montserrat';
+}
+
+.fortitle {
+    display: none;
+}
+
+.imgfooter {
+    position: absolute;
+    right: 0;
+    top: 662px;
+}
+
+.imgfooter:hover {
+    transform: scale(1.1);
+}
+
+.imgfooter {
+    transition: .2s;
+}
+
+.iframe {
+    max-width: 360px;
+    position: absolute;
+    right: 268px;
+    top: 665px;
+    transition: .2s;
+}
+
+.iframe:hover {
+    transform: scale(1.1);
+}
+
+.header__menu_item {
+    transition: .2s;
+    cursor: pointer;
+}
+
+.header__menu_item:hover {
+    color: #FFC700;
+    transform: scale(1.1);
+}
+
+@media(max-width:768px) {
+    .header__left_image {
+        position: relative;
+        z-index: 100;
+    }
+    .baground_img {
+        background-position: right;
+    }
+    .header_right {
+        transform: translateY(-1000px);
+        transition: .3s;
+    }
+    .check:checked~.header_right {
+        transform: translateY(0);
+    }
+    .check:checked~.label2 {
+        display: block;
+        z-index: 15;
+    }
+    .check:checked~.label {
+        display: none;
+    }
+    .header_right {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.jpg);
+        width: 400px;
+        min-height: 789px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .label {
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+    .label2 {
+        position: absolute;
+        top: 47px;
+        right: 33px;
+    }
+    .header_menu {
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+    }
+    .header__menu_item2 .menu__item_href {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 17px;
+        color: #FFC700;
+    }
+    .header__menu_item {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    .header__end_title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    // .baground_img {
+    //     min-width: 768px;
+    // }
+    .imgfooter {
+        position: absolute;
+        right: 10px;
+        top: 662px;
+    }
+    .iframe {
+        position: absolute;
+        left: 0;
+        top: 665px;
+    }
+    .imgfooter {
+        display: none;
+    }
+}
+
+@media(max-width:578px) {
+    .baground_img {
+        max-height: 928px;
+    }
+    .fortitle {
+        display: block;
+    }
+    .fortitle {
+        visibility: hidden;
+    }
+    .end__flex_image {
+        position: absolute;
+        right: 10px;
+        top: 600px;
+    }
+    .header__end_title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+    .end__flex_title {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 90%;
+        max-width: 385px;
+    }
+}

@@ -1,0 +1,64 @@
+.section__life {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 200px;
+}
+
+.section__life_box {
+    background: #EDEDED;
+    border-radius: 10px;
+    max-width: 542px;
+    min-height: 476px;
+    padding: 64px 75px 50px 85px;
+    transition: .3s;
+}
+
+.section__life_box:hover {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.533), #3933b4, rgba(255, 0, 0, 0.478));
+    transform: scale(1.1);
+}
+
+.life__box_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0499DD;
+}
+
+.life__box_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    padding-top: 40px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.life__box_text:hover {
+    color: #EDEDED;
+}
+
+.life__box_text2:hover {
+    color: #EDEDED;
+}
+
+.life__box_text2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    padding-top: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.life__box_title {
+    transition: .2s;
+}
+
+.life__box_title:hover {
+    transform: translateY(-5px);
+    color: #ffff;
+}
